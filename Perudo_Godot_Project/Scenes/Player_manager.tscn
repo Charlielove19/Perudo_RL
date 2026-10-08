@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://7bncvyv3nos"]
+
+[ext_resource type="Script" uid="uid://dt7cnpr2ms6li" path="res://Scripts/player_manager.gd" id="1_u4sjy"]
+[ext_resource type="PackedScene" uid="uid://be8qbmt0fe144" path="res://Scenes/Player.tscn" id="2_ke37u"]
+[ext_resource type="Script" uid="uid://bmmgk86525j2n" path="res://Scripts/player.gd" id="3_ke37u"]
+
+[node name="PlayerManager" type="Control" unique_id=268842657 node_paths=PackedStringArray("player_container")]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_u4sjy")
+player = ExtResource("2_ke37u")
+player_container = NodePath("HBoxContainer")
+players = Array[ExtResource("3_ke37u")]([null, null, null])
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=726409247]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+grow_horizontal = 2
+alignment = 1

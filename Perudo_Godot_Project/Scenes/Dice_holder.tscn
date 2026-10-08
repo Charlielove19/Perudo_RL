@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://cjqcj2rwo4aax"]
+
+[ext_resource type="Script" uid="uid://bj5yfhewc87v8" path="res://Scripts/dice_holder.gd" id="1_8midj"]
+[ext_resource type="PackedScene" uid="uid://b0db0hrcp5w02" path="res://Scenes/Dice_icon.tscn" id="2_3hakl"]
+
+[node name="Dice_holder" type="HBoxContainer" unique_id=1563440828]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -43.0
+offset_top = 9.0
+offset_right = 43.0
+offset_bottom = 29.0
+grow_horizontal = 2
+grow_vertical = 0
+pivot_offset = Vector2(43, 10)
+theme_override_constants/separation = 35
+alignment = 1
+script = ExtResource("1_8midj")
+dice_icon = ExtResource("2_3hakl")

@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://b0db0hrcp5w02"]
+
+[ext_resource type="Script" uid="uid://dyo53mfxqtdbx" path="res://Scripts/dice_face.gd" id="1_r8hpb"]
+[ext_resource type="Texture2D" uid="uid://ruwp8emdt4w4" path="res://Assets/dice UI-Sheet plus qmark.png" id="2_2iero"]
+
+[node name="DiceIcon" type="Control" unique_id=676287874 node_paths=PackedStringArray("sprite")]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_r8hpb")
+sprite = NodePath("Sprite2D")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=754087892]
+texture_filter = 1
+texture = ExtResource("2_2iero")
+hframes = 7
