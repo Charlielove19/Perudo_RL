@@ -1,13 +1,13 @@
 extends Control
+class_name Player
 @export var dice_holder: HBoxContainer
 @export var name_label: Label
 @export var green_border: Panel
-@export var dice: Array[int]
+@export var dice: Array[int] = []
 @export var player_name: String
 @export var is_current_player: bool
 
 func _ready():
-	dice = [0,0,2,6,4]
 	update_dice_holder()
 	update_green_border()
 	update_name_text()
